@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto:wght@300;700&family=Source+Code+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>ToDo-List</title>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div>
+          <h1 class="title">TO-DO LIST</h1>
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            placeholder="What to do..."
+            class="input-field"
+            id="todoInput"
+          />
+          <button class="add-button">New Task</button>
+        </div>
+        <ul class="todoList"></ul>
+        <div></div>
+        <div class="counter-container">
+          <div class="button-container">
+            <button class="delete-button">
+              <img src="img/trash.svg" alt="" />
+            </button>
+          </div>
+          <div class="counter">
+            <p><span>0</span> items total</p>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
