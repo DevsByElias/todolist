@@ -52,6 +52,9 @@ body {
   text-decoration: none;
   padding: 1rem;
 }
+.input-field:hover {
+  border: solid 2px #717fe970;
+}
 ::placeholder {
   text-align: center;
   color: #7f8088;
