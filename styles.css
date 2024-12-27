@@ -1,9 +1,5 @@
 :root {
-  background: linear-gradient(
-    180deg,
-    rgba(45, 128, 253, 0.301) 0%,
-    #163d923f 100%
-  );
+  background-color: #21222c;
 }
 
 html {
@@ -19,20 +15,19 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Roboto", sans-serif;
+  color: #cdcdcd;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: white;
   border-radius: 35px;
   font-size: 1.5rem;
   padding: 1rem 7rem 0rem 7rem;
   min-height: 40rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.281),
-    0 4px 6px -4px rgba(0, 0, 0, 0.473);
   text-align: center;
+  border: solid 1px #f1fa8c;
 }
 
 .title {
@@ -46,18 +41,20 @@ body {
   margin-left: 6.5rem;
   font-size: 1.3rem;
   outline: none;
-  background: #031ff01e;
+  background: #191a21;
   border: none;
   border-radius: 12px;
   text-decoration: none;
   padding: 1rem;
 }
-.input-field:hover {
-  border: solid 2px #717fe970;
+.input-field:hover,
+.add-button:hover,
+.delete-button:hover {
+  border: solid 1px #f1fa8c;
 }
 ::placeholder {
   text-align: center;
-  color: #7f8088;
+  color: #cdcdcd;
   font-family: "Roboto", sans-serif;
 }
 ::-webkit-input-placeholder {
@@ -84,32 +81,20 @@ body {
   margin-top: auto;
   font-size: 1.5rem;
 }
-.add-button {
-  margin: 0 auto;
-}
+
 .add-button,
 .delete-button {
-  color: black;
+  color: #cdcdcd;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   align-items: center;
   min-width: 2.2rem;
   padding: 0.5rem;
   border: none;
-  background: #031ff027;
+  background: #191a21;
   border-radius: 5px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.205),
-    0 2px 4px -2px rgba(0, 0, 0, 0.466);
 }
-.add-button:hover,
-.delete-button:hover {
-  transform: scale(1.1);
-  transition: all 0.15s ease;
-  cursor: pointer;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.144),
-    0 4px 6px -4px rgba(0, 0, 0, 0.103);
-  background: #717fe970;
-}
+
 ul {
   list-style-type: none;
   font-weight: 600;
